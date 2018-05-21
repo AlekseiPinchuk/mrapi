@@ -354,11 +354,7 @@ export class SeedConfig {
    * Set ENABLE_SCSS environment variable to 'true' or '1'
    * @type {boolean}
    */
-  ENABLE_SCSS = ['true', '1'].indexOf(
-    `${process.env.ENABLE_SCSS}`.toLowerCase()
-  ) !== -1 ||
-    argv['scss'] ||
-    false;
+  ENABLE_SCSS = true;
 
   /**
    * Enable tslint emit error by setting env variable FORCE_TSLINT_EMIT_ERROR

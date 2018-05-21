@@ -32,6 +32,8 @@ export class ProjectConfig extends SeedConfig {
       // {src: `${this.CSS_SRC}/path-to-lib/test-lib.css`, inject: true, vendor: false},
     ];
 
+    this.SCSS_SRC = `${this.APP_SRC}/scss`;
+
     this.ROLLUP_INCLUDE_DIR = [
       ...this.ROLLUP_INCLUDE_DIR,
       //'node_modules/moment/**'
