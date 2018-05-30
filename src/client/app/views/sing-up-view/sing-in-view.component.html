@@ -1,0 +1,28 @@
+<div class="content">
+  <div class="left-side">
+    <div class="sing-in-wrapper">
+      <div class="logo-block">
+        <img class="logo-img" src="/" alt="">
+      </div>
+      <div class="form-block">
+        <form class="login-form">
+          <mat-form-field>
+            <input matInput placeholder="Username" #username>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Password" #password>
+          </mat-form-field>
+
+          <div class="form-buttons">
+            <button mat-button="Login" (click)="login({ username: username.value, password: password.value })">Login</button>
+            <button mat-button="Register">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="right-side">
+
+  </div>
+</div>
+

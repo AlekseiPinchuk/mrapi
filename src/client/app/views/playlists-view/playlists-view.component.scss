@@ -1,0 +1,63 @@
+:host {
+  .playlists-menu {
+    line-height: 1;
+    color: #002e4f;
+    height: 100px;
+    padding-top: 40px;
+
+    span {
+      font-size: 28px;
+      position: relative;
+      top: 3px;
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #eee;
+    }
+  }
+
+  .playlist-menu-nav {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+  }
+
+  .playlists-list {
+    padding: 0;
+    margin-bottom: 70px;
+
+    .playlist_container_father {
+      margin-bottom: 20px;
+
+      .playlist_container {
+        border-style: solid;
+        height: 207px;
+        border-width: 1px;
+        border-radius: 5px;
+        border-color: rgb(187,189,194);
+        color: #aaaeb4;
+        font-size: 11px;
+        overflow: hidden;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        .playlist_container_name {
+          display: flex;
+          justify-content: center;
+
+          .name {
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-size: 18px;
+            overflow: hidden;
+            height: 50px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

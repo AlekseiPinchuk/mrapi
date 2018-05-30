@@ -1,0 +1,63 @@
+:host {
+  .header {
+    height: 100px;
+
+    .header-nav {
+      height: 100%;
+
+      .col-nav {
+        height: 100%;
+        .row-nav {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+    background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+    min-height: 100px;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      max-width: 130px;
+    }
+  }
+
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .links-list {
+      display: flex;
+      li {
+        display: block;
+        padding: 0 35px;
+      }
+    }
+  }
+
+  .navbar-right {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

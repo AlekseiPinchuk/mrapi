@@ -1,0 +1,62 @@
+<div>
+  <header-component></header-component>
+
+  <div class="page-wrapper">
+    <div class="row">
+      <div class="offset-lg-1 col-lg-10">
+        <div class="playlists-menu">
+          <div class="row">
+            <div class="col-xs-5 col-md-6 col-lg-6">
+              <div>
+                <span>Плейлисты</span>
+              </div>
+            </div>
+            <div class="col-xs-7 col-md-6 col-lg-6 playlist-menu-button-padding">
+              <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="offset-md-7 offset-lg-8">
+                  <div>
+                    <button class="btn btn-md">Создать плейлист</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 playlist-menu-nav">
+        <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 playlist-menu">
+          <button class="btn btn-md">Готовые</button>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 playlist-menu">
+          <button class="btn btn-md">По жанрам</button>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 playlist-menu">
+          <button class="btn btn-md">Мои плейлисты</button>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="playlists.length">
+      <div class="offset-md-0 offset-xs-0 offset-sm-0 offset-lg-1 col-xs-12 col-sm-12 col-lg-10 playlists-list">
+        <div class="row">
+          <div *ngFor="let playlist of playlists" class="col-xs-12 col-sm-6 col-md-3 playlist_container_father">
+            <div class="playlist_container">
+              <div class="playlist_container_name">
+                <div class="name">
+                  {{ playlist.name }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
